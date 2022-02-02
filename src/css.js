@@ -64,7 +64,7 @@ const string = `/*
 .mouth .up .lip{
     border: 3px solid black;
     height: 30px;
-    width: 80px;
+    width: 82px;
     border-top-color: transparent;
     border-bottom-color: transparent;
     position: absolute;
