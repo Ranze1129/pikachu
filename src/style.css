@@ -72,7 +72,7 @@
             height: 0px;
             position: absolute;
             left: 50%;
-            top: 105px;
+            top: 145px;
             margin-left: -10px; 
             z-index: 10; 
         }
@@ -81,7 +81,7 @@
             height: 200px;
             position: absolute;
             left: 50%;
-            top: 130px;
+            top: 170px;
             margin-left: -100px;
         }
         .mouth .up{

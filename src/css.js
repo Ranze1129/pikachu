@@ -30,7 +30,7 @@ const string = `/*
     height: 54px;
     position: absolute;
     left: 50%;
-    top: 60px;
+    top: 100px;
     margin-left: -27px;
     background: #2e2e2e;
     border-radius: 50%;
@@ -124,7 +124,7 @@ const string = `/*
     border: 3px solid black;
     width: 65px;
     height: 65px;
-    top: 140px;
+    top: 180px;
     margin-left: -35px;
     z-index: 3;
 }
