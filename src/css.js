@@ -30,7 +30,7 @@ const string = `/*
     height: 54px;
     position: absolute;
     left: 50%;
-    top: 100px;
+    top: 60px;
     margin-left: -27px;
     background: #2e2e2e;
     border-radius: 50%;
@@ -68,6 +68,9 @@ const string = `/*
     border-top-color: transparent;
     border-bottom-color: transparent;
     position: absolute;
+    background: #ffe600;
+}
+.spot{
     background: #ffe600;
 }
 .mouth .up .lip.left{
@@ -121,7 +124,7 @@ const string = `/*
     border: 3px solid black;
     width: 65px;
     height: 65px;
-    top: 180px;
+    top: 140px;
     margin-left: -35px;
     z-index: 3;
 }

@@ -72,7 +72,7 @@
             height: 0px;
             position: absolute;
             left: 50%;
-            top: 145px;
+            top: 105px;
             margin-left: -10px; 
             z-index: 10; 
         }
@@ -81,7 +81,7 @@
             height: 200px;
             position: absolute;
             left: 50%;
-            top: 170px;
+            top: 130px;
             margin-left: -100px;
         }
         .mouth .up{
@@ -121,4 +121,14 @@
             100%{
                 transform: rotate(0deg);
             }
+        }
+        .spot{
+            position: absolute;
+            left:50%;
+            top: 29px;
+            width: 7px;
+            height: 7px;
+            z-index: 4;
+            margin-left: -6px;
+            transform: rotate(60deg);
         }

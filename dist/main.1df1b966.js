@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"css.js":[function(require,module,exports) {
+})({"K4Xi":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -111,7 +111,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var string = "/*\n* \u9996\u5148\uFF0C\u9700\u8981\u51C6\u5907\u76AE\u5361\u4E18\u7684\u76AE\n*/\n.skin{\n    background: #ffe600;\n}\n/*\n * \u63A5\u4E0B\u6765\uFF0C\u753B\u76AE\u5361\u4E18\u7684\u9F3B\u5B50\n */\n.nose{\n    border: 8px solid red;\n    border-color: black transparent transparent;\n    border-bottom: none;\n}\n.yuan{\n    position: absolute;\n    width: 16px;\n    height: 6px;\n    top: -14px;\n    left: -8px;\n    border-radius: 15px 15px 0 0;\n    background: black;\n}\n/*\n * \u63A5\u4E0B\u6765\uFF0C\u753B\u76AE\u5361\u4E18\u7684\u773C\u775B\n */\n.eye{\n    border: 2px solid black;\n    width: 54px;\n    height: 54px;\n    position: absolute;\n    left: 50%;\n    top: 60px;\n    margin-left: -27px;\n    background: #2e2e2e;\n    border-radius: 50%;\n}\n/*\n * \u753B\u91CC\u9762\u7684\u773C\u73E0\u5B50\n */\n.eyeball{\n    border: 3px solid black;\n    width:26px;\n    height: 26px;\n    background: white;\n    border-radius: 50%;\n    position: relative;\n    left: 8px;\n    top: 1px;\n}\n/*\n * \u5DE6\u773C\u5728\u5DE6\u8FB9\uFF0C\u53F3\u773C\u5728\u53F3\u8FB9\uFF08\u5E9F\u8BDD\uFF09\n */\n.eye.left{\n    transform: translateX(-100px);\n}\n.eye.right{\n    transform: translateX(100px);\n}\n/*\n * \u7136\u540E\uFF0C\u753B\u76AE\u5361\u4E18\u7684\u5634\n * \u5148\u753B\u4E0A\u5634\u5507\n */\n.mouth .up .lip{\n    border: 3px solid black;\n    height: 30px;\n    width: 82px;\n    border-top-color: transparent;\n    border-bottom-color: transparent;\n    position: absolute;\n    background: #ffe600;\n}\n.spot{\n    background: #ffe600;\n}\n.mouth .up .lip.left{\n    border-radius: 0 0 0 50px;\n    border-right-color: transparent;\n    transform: rotate(-30deg) translateX(-55px);\n    left:50%;\n    margin-left: -30px;\n}\n\n.mouth .up .lip.right{\n    border-radius: 0 0  50px 0;\n    border-left-color: transparent;\n    margin-left: 50px;\n    transform: rotate(30deg) translateX(55px);\n}\n/*\n * \u518D\u753B\u4E0B\u5634\u5507\n */\n.mouth .down .yuan1{\n    border: 3px solid black;\n    width: 128px;\n    height: 600px;\n    position: absolute;\n    bottom: 29px;\n    left: 50%;\n    border-radius: 80px/300px;\n    margin-left: -64px;\n    background: #9b000a;\n    overflow: hidden;\n}\n/*\n * \u8FD8\u6709\u4E2A\u5C0F\u820C\u5934\n */\n.mouth .down .yuan1 .yuan2{\n    width: 160px;\n    height: 265px;\n    position: absolute;\n    bottom: -145px;\n    left:50%;\n    margin-left: -80px;\n    background: #ff485f;\n    border-radius: 150px/200px;\n}\n/*\n * \u7ED9\u76AE\u5361\u4E18\u753B\u4E0A\u816E\u7EA2\n */\n.face{\n    position: absolute;\n    left: 50%;\n    border: 3px solid black;\n    width: 65px;\n    height: 65px;\n    top: 140px;\n    margin-left: -35px;\n    z-index: 3;\n}\n.face.left{\n    transform: translateX(-140px);\n    background: red;\n    border-radius: 50%;\n}\n.face.right{\n    transform: translateX(140px);\n    background: red;\n    border-radius: 50%;\n}\n/*\n * \u8FD8\u6709\u76AE\u5361\u4E18\u7684\u95EA\u7535\n */\n.cover{\n    display:none ;\n}\n.face >img{\n    position: absolute;\n    top:50%;\n    left:50%;\n}\n@media (max-width: 500px) {\n    .face.left >img{\n        transform: rotateY(180deg) translateX(-53px);\n    }}\n/*\n * \u6700\u540E\uFF0C\u8BA9\u76AE\u5361\u4E18\u52A8\u4E00\u4E0B\u5427\n */\n.nose{\n    transform-origin: 50% 100%; \n    animation:  wave  infinite 0.8s linear;\n}\n.eyeball{\n    transform-origin: 50% 100%; \n    animation:  move  infinite 3s ;\n}\n";
 exports.default = string;
-},{}],"main.js":[function(require,module,exports) {
+},{}],"epB2":[function(require,module,exports) {
 'use strict';
 
 var _css = require('./css.js');
@@ -190,175 +190,5 @@ var player = {
 };
 
 player.init();
-},{"./css.js":"css.js"}],"C:\\Users\\Ranze\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = '' || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54995' + '/');
-  ws.onmessage = function (event) {
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      console.clear();
-
-      data.assets.forEach(function (asset) {
-        hmrApply(global.parcelRequire, asset);
-      });
-
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          hmrAccept(global.parcelRequire, asset.id);
-        }
-      });
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-
-      removeErrorOverlay();
-
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID;
-
-  // html encode message and stack trace
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAccept(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAccept(bundle.parent, id);
-  }
-
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-
-  cached = bundle.cache[id];
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAccept(global.parcelRequire, id);
-  });
-}
-},{}]},{},["C:\\Users\\Ranze\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js","main.js"], null)
-//# sourceMappingURL=/main.d3517820.map
+},{"./css.js":"K4Xi"}]},{},["epB2"], null)
+//# sourceMappingURL=main.1df1b966.map
